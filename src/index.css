@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.race-table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.race-table {
+  border-collapse: collapse;
+  margin: 20px;
+  font-size: 16px;
+  min-width: 700px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.race-table thead tr {
+  background-color: #2d3a3e;
+  color: #ffffff;
+  text-align: left;
+}
+
+.race-table th,
+.race-table td {
+  padding: 12px 15px;
+}
+
+.race-table th {
+  text-align: center;
+}
+
+.race-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.race-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.race-table tbody tr:last-of-type {
+  border-bottom: 2px solid #2d3a3e;
+}
+
+.race-table tbody td button {
+  background-color: #2d3a3e;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.race-table tbody td button:hover {
+  background-color: #4c5b5f;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  max-height: 80%;
+  overflow: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.results-table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.results-table th,
+.results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.results-table th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #6d7fcc;
+  text-decoration: underline;
+}
+
+.clickable:hover {
+  color: #2b2d42;
+  text-decoration: none;
+}
+
+.driver-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
